@@ -14,11 +14,37 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call([
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+            //Ejecucion Seed Roles
+            rolesSeed::class,
+
+            //Ejecucion Seed Trabajadores
+            trabajadoresSeed::class,
+
+            //Ejecucion Seed User_trabajadores
+            user_trabajadoresSeed::class,
+
+            //Ejecucion Seed Clientes
+            clientesSeed::class,
+
+            //Ejecicion Seed User_clientes
+            user_clientesSeed::class,
+
+            //Ejecucion Seed pqrs
+            pqrsSeed::class,
+
+            //Ejecicion Seed Tipo Habitaciones
+            tipo_habitacionesSeed::class,
+
+            //Ejecucion Seed Habitaciones
+            habitacionesSeed::class,
+
+            //Ejecucion Seed Reservaciones
+            reservacionesSeed::class,
+
+            //Ejecucion Seed habitacion_has_reservacion
+            //habitacion_has_reservacionSeed::class,
+        ]);
     }
 }
