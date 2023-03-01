@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\estadisticas;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -51,6 +53,9 @@ class DatabaseSeeder extends Seeder
 
             //Ejecucion Seed servicio_has_reservacion
             servicio_has_reservacionSeed::class,
+
+            //Ejecucion Seed Estadisticas
+            estadisticasSeed::class,
         ]);
     }
 }
