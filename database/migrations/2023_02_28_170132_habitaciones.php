@@ -16,11 +16,13 @@ return new class extends Migration
         Schema::create('habitaciones', function (Blueprint $table) {
             $table->id();
 
+            //Columnas Personalizadas
             $table->string("codigo",4)->unique();
             $table->unsignedBigInteger("id_tip_hab");
 
             $table->timestamps();
 
+            //Definicion Llaves foraneas
             $table->foreign("id_tip_hab")->references("id")->on("tipo_habitaciones");
         });
     }

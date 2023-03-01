@@ -16,10 +16,13 @@ return new class extends Migration
         Schema::create('servicio_has_reservacion', function (Blueprint $table) {
             $table->id();
 
+            //Columnas Personalizadas
             $table->unsignedBigInteger("id_servicio");
             $table->unsignedBigInteger("id_reserva");
 
             $table->timestamps();
+
+            //Definicon Llaves foraneas
             $table->foreign("id_servicio")->references("id")->on("servicios");
             $table->foreign("id_reserva")->references("id")->on("reservaciones");            
 

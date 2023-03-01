@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('estadisticas', function (Blueprint $table) {
             $table->id();
 
+            //Columnas Personalizadas
             $table->string("visitasPeriodo",7);
             $table->string("ventasPeriodo",9);
             $table->date("inicioPeriodo")->unique();

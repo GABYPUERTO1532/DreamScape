@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('user_trabajadores', function (Blueprint $table) {
             $table->id();
 
+            //Columnas Personalizadas
             $table->string("email",255)->unique();
             $table->string("password",255)->unique();
             $table->unsignedBigInteger("id_trabajador")->unique();
@@ -23,6 +24,7 @@ return new class extends Migration
 
             $table->timestamps();
 
+            //Definicion Llaves Foraneas
             $table->foreign("id_trabajador")->references("id")->on("trabajadores");
             $table->foreign("id_rol")->references("id")->on("roles");
         });

@@ -16,10 +16,13 @@ return new class extends Migration
         Schema::create('habitacion_has_reservacion', function (Blueprint $table) {
             $table->id();
 
+            //Columnas Personalizadas
             $table->unsignedBigInteger("id_habitacion");
             $table->unsignedBigInteger("id_reserva");
 
             $table->timestamps();
+
+            //Definicion Llaves Foraneas
             $table->foreign("id_habitacion")->references("id")->on("habitaciones");
             $table->foreign("id_reserva")->references("id")->on("reservaciones");
 

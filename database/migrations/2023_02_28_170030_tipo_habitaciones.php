@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('tipo_habitaciones', function (Blueprint $table) {
             $table->id();
 
+            //Columnas Personalizadas
             $table->string("nombre",50)->unique();
             $table->text("descripcion")->unique();
             

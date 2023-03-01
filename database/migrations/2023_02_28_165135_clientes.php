@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('clientes', function (Blueprint $table) {
             $table->id();
 
+            //Columnas Personalizadas
             $table->string("nombre",45)->unique();
             $table->string("tip_doc",30);
             $table->string("num_doc",20)->unique();

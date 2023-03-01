@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('reservaciones', function (Blueprint $table) {
             $table->id();
 
+            //Columnas Personalizadas
             $table->datetime("fechaInicio");
             $table->datetime("fechaFin");
             $table->string("precio",8);
@@ -25,6 +26,8 @@ return new class extends Migration
             $table->unsignedBigInteger("id_cliente");
 
             $table->timestamps();
+
+            //Definicion Llaves Foraneas
             $table->foreign("id_cliente")->references("id")->on("clientes");
         });
     }

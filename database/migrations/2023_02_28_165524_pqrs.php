@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('pqrs', function (Blueprint $table) {
             $table->id();
 
+            //Columnas Personalizadas
             $table->string("tipo",11);
             $table->text("descripcion")->unique();
             $table->boolean("important")->default(FALSE);
@@ -23,6 +24,7 @@ return new class extends Migration
 
             $table->timestamps();
 
+            //Definicion Llaves Foraneas
             $table->foreign("id_cliente")->references("id")->on("user_clientes");
         });
     }
