@@ -45,6 +45,12 @@ class DatabaseSeeder extends Seeder
 
             //Ejecucion Seed habitacion_has_reservacion
             //habitacion_has_reservacionSeed::class,
+
+            //Ejecucion Seed Servicios
+            serviciosSeed::class,
+
+            //Ejecucion Seed servicio_has_reservacion
+            //servicio_has_reservacionSeed::class,
         ]);
     }
 }
