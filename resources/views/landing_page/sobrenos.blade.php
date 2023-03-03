@@ -1,11 +1,10 @@
-@extends('components.templateuno')
+@extends('components.layout')
 
-@section('title','sobrenos')
+@section('title','Nosotros')
 
 @section('content')
-
-<!--Container-->
-<div class="container mt-4">
+  <!--Container-->
+    <div class="container mt-4">
       <div class="row">
         <div class="card mb-3" style="max-width: col-12">
           <div class="row g-0">
@@ -13,7 +12,7 @@
               <img
                 src="./img/carrusel/ext2.jpg"
                 class="img-fluid rounded-start"
-                alt="..."
+                alt="Carrousel Fotos"
               />
             </div>
             <div class="col-md-6">
@@ -39,7 +38,7 @@
               <img
                 src="./img/MisionVision/mision.jpg"
                 class="img-fluid rounded-start"
-                alt="..."
+                alt="Mision Hotel"
                 height="170px"
                 width="190px"
               />
@@ -67,7 +66,7 @@
               <img
                 src="./img/MisionVision/vision.jpg"
                 class="img-fluid rounded-start"
-                alt="..."
+                alt="Vision Hotel"
                 height="170px"
                 width="190px"
               />
@@ -90,6 +89,5 @@
         </div>
       </div>
     </div>
-
 
 @endsection

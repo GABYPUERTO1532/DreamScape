@@ -1,11 +1,10 @@
-@extends('components.templateuno')
+@extends('components.layout')
 
 @section('title','contactanos')
 
 @section('content')
 
-
-    <!--Formualrio-->
+  <!--Formulario-->
     <div style="min-height:60vh;" class="container mt-4">
       <h3>Dejanos tus comentarios</h3>
       <form action="">

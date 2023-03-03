@@ -1,4 +1,4 @@
-@extends('components.templateuno')
+@extends('components.layout')
 
 @section('title','Habitaciones')
 
