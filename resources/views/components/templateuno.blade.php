@@ -117,10 +117,10 @@
 
     @include("components.modales.mapa")
     @if(isset($user))
-    @include("components.modales.reserva")
-    @include("components.modales.verreserva")
+      @include("components.modales.reserva")
+      @include("components.modales.verreserva")
     @else
-    @include("components.modales.iniciosesion")
+      @include("components.modales.iniciosesion")
     @endif
 
     <script src="./js/boostrap/bootstrap.bundle.js"></script>
