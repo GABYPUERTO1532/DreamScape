@@ -19,7 +19,7 @@ return new class extends Migration
             //Columnas Personalizadas
             $table->string("codigo",4)->unique();
             $table->unsignedBigInteger("id_tip_hab");
-
+            $table->boolean("estado")->default(1);
             $table->timestamps();
 
             //Definicion Llaves foraneas
