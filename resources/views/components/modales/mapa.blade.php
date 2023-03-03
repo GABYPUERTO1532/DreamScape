@@ -19,9 +19,6 @@
           </div>
           <div class="modal-body">
             <div class="col-md-12 col-sm-12 p-3">
-              <div id="preload">
-                <img width="100%" src="./img/maps.png" height="400px" />
-              </div>
               <div id="iframe">
                 <iframe
                   id="iframeMaps"
