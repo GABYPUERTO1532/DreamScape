@@ -17,9 +17,7 @@ return new class extends Migration
             $table->id();
 
             //Columnas Personalizadas
-            $table->string("nombreRol",45)->unique();
-
-            $table->timestamps();
+            $table->string("name",45)->unique();
         });
     }
 

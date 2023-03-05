@@ -5,8 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class roles extends Model
+class service_has_reservation extends Model
 {
     use HasFactory;
+    public $table="service_has_reservation";
     public $timestamps=FALSE;
 }

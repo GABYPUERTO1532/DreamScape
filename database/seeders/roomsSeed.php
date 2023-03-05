@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\pqrs;
+use App\Models\rooms;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class pqrsSeed extends Seeder
+class roomsSeed extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,10 +15,14 @@ class pqrsSeed extends Seeder
      */
     public function run()
     {
-        pqrs::create([
-            'type'=>"Comentario",
-            'description'=>'Me encanto su servicio',
-            'id_user_client'=>1,
+        rooms::create([
+            'code'=>"101A",
+            'id_typ_room'=>1
+        ]);
+
+        rooms::create([
+            'code'=>"201A",
+            'id_typ_room'=>2
         ]);
     }
 }

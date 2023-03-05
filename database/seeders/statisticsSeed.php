@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\pqrs;
+use App\Models\statistics;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class pqrsSeed extends Seeder
+class statisticsSeed extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,10 +15,11 @@ class pqrsSeed extends Seeder
      */
     public function run()
     {
-        pqrs::create([
-            'type'=>"Comentario",
-            'description'=>'Me encanto su servicio',
-            'id_user_client'=>1,
+        statistics::create([
+            'visits'=>250000,
+            'sales'=>20000000,
+            'init_period'=>'2023/01/28',
+            'fin_period'=>'2023/02/28',
         ]);
     }
 }

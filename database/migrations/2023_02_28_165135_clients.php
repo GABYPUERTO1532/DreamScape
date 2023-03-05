@@ -13,19 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('pqrs', function (Blueprint $table) {
+        Schema::create('clients', function (Blueprint $table) {
             $table->id();
 
             //Columnas Personalizadas
-            $table->string("type",11);
-            $table->text("description")->unique();
-            $table->boolean("important")->default(0);
-            $table->unsignedBigInteger("id_user_client");
+            $table->string("name",45)->unique();
+            $table->string("doc_typ",30);
+            $table->string("doc_num",20)->unique();
+            $table->string("sex_gender",10);
+            $table->string("pho_num",10)->unique();
 
             $table->timestamps();
-
-            //Definicion Llaves Foraneas
-            $table->foreign("id_user_client")->references("id")->on("user_clients");
         });
     }
 
@@ -36,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pqrs');
+        Schema::dropIfExists('clients');
     }
 };

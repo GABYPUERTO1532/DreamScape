@@ -17,27 +17,27 @@ class rolesSeed extends Seeder
     {
         //Creacion Rol Administrador
         Roles::create([
-            'nombreRol'=>'administrador'
+            'name'=>'administrador'
         ]);
         
         //Creacion Rol Gerente
         roles::create([
-            'nombreRol'=>'gerente'
+            'name'=>'gerente'
         ]);
 
         //Creacion Rol Recepcionista
         Roles::create([
-            'nombreRol'=>'recepcionista'
+            'name'=>'recepcionista'
         ]);
 
         //Creacion Rol Servicio al Cliente
         Roles::create([
-            'nombreRol'=>'servicio al cliente'
+            'name'=>'servicio al cliente'
         ]);
 
         //Creacion Rol Servicios Generales
         Roles::create([
-            'nombreRol'=>'servicios generales'
+            'name'=>'servicios generales'
         ]);
 
     }

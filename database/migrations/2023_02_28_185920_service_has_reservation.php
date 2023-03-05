@@ -13,19 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('pqrs', function (Blueprint $table) {
+        Schema::create('service_has_reservation', function (Blueprint $table) {
             $table->id();
 
             //Columnas Personalizadas
-            $table->string("type",11);
-            $table->text("description")->unique();
-            $table->boolean("important")->default(0);
-            $table->unsignedBigInteger("id_user_client");
+            $table->unsignedBigInteger("id_service");
+            $table->unsignedBigInteger("id_reservation");
 
-            $table->timestamps();
+            //Definicon Llaves foraneas
+            $table->foreign("id_service")->references("id")->on("services");
+            $table->foreign("id_reservation")->references("id")->on("reservations");         
 
-            //Definicion Llaves Foraneas
-            $table->foreign("id_user_client")->references("id")->on("user_clients");
         });
     }
 
@@ -36,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pqrs');
+        Schema::dropIfExists('service_has_reservation');
     }
 };
