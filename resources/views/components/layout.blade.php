@@ -10,7 +10,7 @@
     @vite(['node_modules/bootstrap/scss/bootstrap.scss'])
     @vite(['resources/css/app.css'])
 
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/palmera.png" type="image/x-icon">
 
   </head>
   <body>
@@ -42,7 +42,7 @@
         <a href={{route("index")}}>
           <div class="row div-central-nav">
             <div class="col-4">
-              <img width="60%" src="./img/logo.png" />
+              <img width="75%" src="./img/palmera.png" />
             </div>
             <p class="col-8 mt-4" id="slog">Dale un respiro a tu vida</p>
           </div>

@@ -23,7 +23,7 @@ h6 {
 }
 
 .nav-links {
-  background-color: #4b6587;
+  background-color: #000000;
   position: sticky;
   z-index: 1;
   top: 0;
@@ -43,7 +43,7 @@ h6 {
 
 #slog {
   font-size: 2rem;
-  color: #c6b4ce;
+  color:#1000C2;
   padding-left: 0px;
   font-family: "Fuente-Titulos";
 }
@@ -67,8 +67,8 @@ a {
 }
 
 #nabvar-button {
-  color: #4b6587;
-  background-color: antiquewhite;
+  color:#1000C2;
+  background-color: rgb(255, 255, 255);
 }
 
 /*footer*/
