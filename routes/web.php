@@ -33,17 +33,19 @@ Route::any('homecliente',function() {
     return view('landing_page.cliente.inicio', [
         'user' => (object) [
             'rol' => false, //si es cliente enviar false
-            'name' => 'Juan David'
+            'name' => 'Valen',
+            'url_photo' => 'xd.jpeg'
         ]
     ]);
 })->name('homecliente');
 
 
-Route::any('reservascli',function() {
+Route::get('reservascli',function() {
     return view('landing_page.cliente.reservas', [
         'user' => (object) [
-            'rol' => false, //si es cliente enviar false
-            'name' => 'Juan David'
+            'rol' => 0, //si es cliente enviar 0
+            'name' => 'Valen',
+            'url_photo' => 'xd.jpeg'
         ]
     ]);
 })->name('reservascliente');

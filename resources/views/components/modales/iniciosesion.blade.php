@@ -7,6 +7,7 @@
       aria-hidden="true"
     >
       <div class="modal-dialog">
+        <form action="{{ route('homecliente') }}" method="GET">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="reserveModalLabel">
@@ -20,11 +21,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form>
                 <div class="mt-2">
-  
-
-                  </select>
                   <label for="email" class="form-label"
                     >Correo Electrónico</label
                   >
@@ -47,27 +44,25 @@
                     name="contraseña"
                   />
                 </div>
-              </div>
-            </form>
-            <a href="...">¿Olvidaste tu contraseña?</a>
-          </div>
-          <div class="modal-footer">
-            <button
-              id="dismissReserve"
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Cerrar
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary"
-              onclick="saveReserve()"
-            >
-              Iniciar Sesion
-            </button>
+                </div>
+                <a href="...">¿Olvidaste tu contraseña?</a>
+                <div class="modal-footer">
+                  <button
+                    id="dismissReserve"
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <input
+                    type="submit"
+                    class="btn btn-primary"
+                    value="Iniciar sesión"
+                  >
+                </div>
           </div>
         </div>
+      </form>
       </div>
-    </div>
+  </div>
