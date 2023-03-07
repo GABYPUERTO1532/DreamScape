@@ -33,8 +33,17 @@ Route::any('homecliente',function() {
     return view('landing_page.cliente.inicio', [
         'user' => (object) [
             'rol' => false, //si es cliente enviar false
-            'name' => 'Juan David',
-            'url_photo' => 'xd.webp'
+            'name' => 'Juan David'
         ]
     ]);
 })->name('homecliente');
+
+
+Route::any('reservascli',function() {
+    return view('landing_page.cliente.reservas', [
+        'user' => (object) [
+            'rol' => false, //si es cliente enviar false
+            'name' => 'Juan David'
+        ]
+    ]);
+})->name('reservascliente');

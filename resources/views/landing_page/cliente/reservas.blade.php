@@ -3,10 +3,11 @@
 @section('menu')
     @include('components.menucliente', 
     [
-        'inicio' => 'active',
-        'reservas' => ''
+        'inicio' => '',
+        'reservas' => 'active'
     ])
 @endsection
+
 @section('content')
-    <h1>Bienvenido {{$user->name}}</h1>
+    <h1>Reservas:</h1>
 @endsection
