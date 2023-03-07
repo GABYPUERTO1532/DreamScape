@@ -1,4 +1,4 @@
-@extends('components.layout')
+@extends('layouts.layout')
 
 @section('title','Home')
 
@@ -91,11 +91,6 @@
         </div>
       </div>
     </div>
-
-
-
-
-    
     <!-- Content -->
     <div class="container mt-4">
       <!-- titulo -->
