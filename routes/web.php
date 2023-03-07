@@ -30,22 +30,15 @@ Route::get('sobrenos', function () {
 })->name("sobrenos");
 
 Route::any('homecliente',function() {
-    return view('landing_page.cliente.inicio', [
-        'user' => (object) [
-            'rol' => false, //si es cliente enviar false
-            'name' => 'Valen',
-            'url_photo' => 'xd.jpeg'
-        ]
-    ]);
+    return view('landing_page.cliente.inicio', ['user' => Config('testing.user')]);
 })->name('homecliente');
 
 
 Route::get('reservascli',function() {
-    return view('landing_page.cliente.reservas', [
-        'user' => (object) [
-            'rol' => 0, //si es cliente enviar 0
-            'name' => 'Valen',
-            'url_photo' => 'xd.jpeg'
-        ]
-    ]);
+    return view('landing_page.cliente.reservas',['user' => Config('testing.user')]);
 })->name('reservascliente');
+
+
+Route::get('hacerreserva',function() {
+    return view('landing_page.cliente.nuevareserva', ['user' => Config('testing.user')]);
+})->name('hacerreserva');

@@ -1,12 +1,8 @@
 @extends('layouts.dashboard')
-@section('rol', 'Cliente')
+@section('title', 'Inicio cliente')
 @section('menu')
-    @include('components.menucliente', 
-    [
-        'inicio' => 'active',
-        'reservas' => ''
-    ])
+    @include('components.menucliente', ['inicio' => 'active',])
 @endsection
 @section('content')
-    <h1>Bienvenido {{$user->name}}</h1>
+    <h1>Bienvenido(a) {{$user->name}}</h1>
 @endsection
