@@ -124,3 +124,34 @@ footer {
 .navbar-light{
   background-color: #2499c7 !important;
 }
+
+.menuPerfil{
+  position: absolute;
+  list-style: none;
+  border-radius: 10%;
+  background-color:#2fb7ec;
+  right: 0;
+  padding: 0;
+  overflow: hidden;
+  color: white;
+  display: none;
+}
+.menuPerfil li{
+  width: 100%;
+  padding: 20px;
+  transition: all .5s;
+}
+.menuPerfil a li{
+  color: white;
+}
+
+.menuPerfil li:hover{
+  background-color:#2983d8;
+}
+
+.fotoPerfil:hover .menuPerfil{
+  display: block;
+}
+.fotoPerfil:hover{
+  cursor: pointer;
+}

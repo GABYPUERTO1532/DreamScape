@@ -17,17 +17,28 @@ Route::get('/', function () {
     return view('landing_page.home');
 })->name("index");
 
-
 Route::get('rooms', function () {
-    return view('landing_page.rooms', ['user'=> true]);
+    return view('landing_page.rooms');
 })->name("rooms");
-
 
 Route::get('contactanos', function () {
     return view('landing_page.contactanos');
 })->name("contactanos");
 
-
 Route::get('sobrenos', function () {
     return view('landing_page.sobrenos');
 })->name("sobrenos");
+
+Route::any('homecliente',function() {
+    return view('landing_page.cliente.inicio', ['user' => Config('testing.user')]);
+})->name('homecliente');
+
+
+Route::get('reservascli',function() {
+    return view('landing_page.cliente.reservas',['user' => Config('testing.user')]);
+})->name('reservascliente');
+
+
+Route::get('hacerreserva',function() {
+    return view('landing_page.cliente.nuevareserva', ['user' => Config('testing.user')]);
+})->name('hacerreserva');
