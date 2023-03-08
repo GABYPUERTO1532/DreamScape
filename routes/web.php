@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\type_rooms;
+use App\Models\tipo_habitaciones;
 
 /*
 |--------------------------------------------------------------------------
