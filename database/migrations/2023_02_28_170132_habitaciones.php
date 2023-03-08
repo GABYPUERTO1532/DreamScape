@@ -13,11 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('roles', function (Blueprint $table) {
+        Schema::create('habitaciones', function (Blueprint $table) {
             $table->id();
 
             //Columnas Personalizadas
-            $table->string("nombre",45)->unique();
+            $table->string("codigo",4)->unique();
+            $table->unsignedBigInteger("id_tipo_habitacion");
+            $table->boolean("estado")->default(1);
+
+            //Definicion Llaves foraneas
+            $table->foreign("id_tipo_habitacion")->references("id")->on("tipo_habitaciones");
         });
     }
 
@@ -28,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('roles');
+        Schema::dropIfExists('habitaciones');
     }
 };

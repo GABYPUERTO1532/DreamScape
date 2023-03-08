@@ -13,11 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('roles', function (Blueprint $table) {
+        Schema::create('usuarios_clientes', function (Blueprint $table) {
             $table->id();
 
             //Columnas Personalizadas
-            $table->string("nombre",45)->unique();
+            $table->string("email",45)->unique()->comment("Correo Electronico");
+            $table->string("password",255)->unique()->comment("Contraseña");
+            $table->unsignedBigInteger("id_cliente")->unique();
+
+            //Definicion Llave Foranea
+            $table->foreign("id_cliente")->references("id")->on("clientes");
         });
     }
 
@@ -28,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('roles');
+        Schema::dropIfExists('usuarios_clientes');
     }
 };

@@ -13,13 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('pqrs', function (Blueprint $table) {
+        Schema::create('reservaciones', function (Blueprint $table) {
             $table->id();
 
             //Columnas Personalizadas
-            $table->string("tipo",11);
-            $table->text("descripcion")->unique();
-            $table->boolean("importante")->default(0);
+            $table->datetime("ini_date")->comment("Fecha Inicio");
+            $table->datetime("fin_date")->comment("Fecha Fin");
+            $table->string("costo",8);
+            $table->integer("num_adulto")->comment("Numero Adultos");
+            $table->integer("num_nino")->comment("Numero Niños");
+            $table->string("estado",20);
             $table->unsignedBigInteger("id_usuario_cliente");
 
             $table->timestamps();
@@ -36,6 +39,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pqrs');
+        Schema::dropIfExists('reservaciones');
     }
 };

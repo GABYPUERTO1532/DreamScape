@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\pqrs;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\usuarios_clientes;
 
-class pqrsSeed extends Seeder
+class usuarios_clientesSeed extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,10 +15,10 @@ class pqrsSeed extends Seeder
      */
     public function run()
     {
-        pqrs::create([
-            'tipo'=>"Comentario",
-            'descripcion'=>'Me encanto su servicio',
-            'id_usuario_cliente'=>1,
+        usuarios_clientes::create([
+            'email'=>"correo@gmail.com",
+            'password'=>'123456789',
+            'id_cliente'=>1
         ]);
     }
 }

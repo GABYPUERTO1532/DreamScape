@@ -13,11 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('roles', function (Blueprint $table) {
+        Schema::create('estadisticas', function (Blueprint $table) {
             $table->id();
 
             //Columnas Personalizadas
-            $table->string("nombre",45)->unique();
+            $table->string("visitas",7);
+            $table->string("ventas",9);
+            $table->date("ini_periodo")->unique()->comment("Inicio Periodo");
+            $table->date("fin_periodo")->unique()->comment("Fin Periodo");
+            
         });
     }
 
@@ -28,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('roles');
+        Schema::dropIfExists('estadisticas');
     }
 };

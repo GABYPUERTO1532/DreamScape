@@ -21,41 +21,41 @@ class DatabaseSeeder extends Seeder
             //Ejecucion Seed Roles
             rolesSeed::class,
 
-            //Ejecucion Seed Workers
-            workersSeed::class,
+            //Ejecucion Seed Trabajadores
+            trabajadoresSeed::class,
 
-            //Ejecucion Seed User_workers
-            user_workersSeed::class,
+            //Ejecucion Seed usuarios_trabajadores
+            usuarios_trabajadoresSeed::class,
 
-            //Ejecucion Seed Clients
-            clientsSeed::class,
+            //Ejecucion Seed Clientes
+            clientesSeed::class,
 
-            //Ejecicion Seed User_clients
-            user_clientsSeed::class,
+            //Ejecicion Seed usuarios_clientes
+            usuarios_clientesSeed::class,
 
             //Ejecucion Seed pqrs
             pqrsSeed::class,
 
-            //Ejecicion Seed Tipo Habitaciones
-            type_roomSeed::class,
+            //Ejecicion Seed tipo_habitaciones
+            tipo_habitacionesSeed::class,
 
             //Ejecucion Seed Habitaciones
-            roomsSeed::class,
+            habitacionesSeed::class,
 
-            //Ejecucion Seed Reservations
-            reservationsSeed::class,
+            //Ejecucion Seed Reservaciones
+            reservacionesSeed::class,
 
-            //Ejecucion Seed room_has_reservation
-            room_has_reservationSeed::class,
+            //Ejecucion Seed habitacion_reservacion
+            habitacion_reservacionSeed::class,
 
-            //Ejecucion Seed Services
-            servicesSeed::class,
+            //Ejecucion Seed Servicios
+            serviciosSeed::class,
 
-            //Ejecucion Seed services_has_reservation
-            service_has_reservationSeed::class,
+            //Ejecucion Seed servicios_reservacion
+            servicio_reservacionSeed::class,
 
-            //Ejecucion Seed statistics
-            statisticsSeed::class,
+            //Ejecucion Seed estadisticas
+            estadisticasSeed::class,
         ]);
     }
 }

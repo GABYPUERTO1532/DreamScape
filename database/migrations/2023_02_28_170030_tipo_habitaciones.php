@@ -13,19 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('pqrs', function (Blueprint $table) {
+        Schema::create('tipo_habitaciones', function (Blueprint $table) {
             $table->id();
 
             //Columnas Personalizadas
-            $table->string("tipo",11);
+            $table->string("nombre",50)->unique();
             $table->text("descripcion")->unique();
-            $table->boolean("importante")->default(0);
-            $table->unsignedBigInteger("id_usuario_cliente");
-
-            $table->timestamps();
-
-            //Definicion Llaves Foraneas
-            $table->foreign("id_usuario_cliente")->references("id")->on("usuarios_clientes");
+            $table->integer("max_adultos")->comment("Maximo Adultos");
+            $table->integer("max_ninos")->comment("Maximo Niños");
+            
         });
     }
 
@@ -36,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pqrs');
+        Schema::dropIfExists('tipo_habitaciones');
     }
 };

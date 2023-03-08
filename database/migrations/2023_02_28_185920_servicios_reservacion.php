@@ -13,11 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('roles', function (Blueprint $table) {
+        Schema::create('servicio_reservacion', function (Blueprint $table) {
             $table->id();
 
             //Columnas Personalizadas
-            $table->string("nombre",45)->unique();
+            $table->unsignedBigInteger("id_servicio");
+            $table->unsignedBigInteger("id_reservacion");
+
+            //Definicon Llaves foraneas
+            $table->foreign("id_servicio")->references("id")->on("servicios");
+            $table->foreign("id_reservacion")->references("id")->on("reservaciones");         
+
         });
     }
 
@@ -28,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('roles');
+        Schema::dropIfExists('servicio_reservacion');
     }
 };
