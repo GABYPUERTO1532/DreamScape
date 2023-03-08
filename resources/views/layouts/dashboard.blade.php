@@ -15,7 +15,7 @@
     @php
         switch($user->rol){
             case(0):
-                $home = 'homecliente';
+                $home = 'reservascliente';
                 break;
             //Añadir rutas base de otros tipos de usuario
         }
@@ -24,7 +24,7 @@
         <div class="fs-5">
             <div class="fotoPerfil">
                 <a href="#">
-                                        @if(isset($user->url_photo))
+                    @if(isset($user->url_photo))
                         <img width="100" height="100" style="object-fit: cover; border-radius: 30%;" 
                         src="/storage/userPhotos/{{$user->url_photo}}" alt="Foto de {{$user->name}}" >
                     @else
@@ -77,6 +77,7 @@
     </div>
 
     @include('components.pie-de-pagina')
+    @yield('scripts')
 </body>
     @vite(['node_modules/bootstrap/dist/js/bootstrap.js'])
 </html>
