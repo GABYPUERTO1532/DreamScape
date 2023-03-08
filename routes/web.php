@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\type_rooms;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,16 +30,13 @@ Route::get('sobrenos', function () {
     return view('landing_page.sobrenos');
 })->name("sobrenos");
 
-Route::any('homecliente',function() {
-    return view('landing_page.cliente.inicio', ['user' => Config('testing.user')]);
-})->name('homecliente');
-
-
 Route::get('reservascli',function() {
     return view('landing_page.cliente.reservas',['user' => Config('testing.user')]);
 })->name('reservascliente');
 
-
 Route::get('hacerreserva',function() {
-    return view('landing_page.cliente.nuevareserva', ['user' => Config('testing.user')]);
+    return view('landing_page.cliente.nuevareserva', [
+        'user' => Config('testing.user'),
+        'roomTypes' => type_rooms::get()
+    ]);
 })->name('hacerreserva');

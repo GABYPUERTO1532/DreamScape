@@ -135,6 +135,7 @@ footer {
   overflow: hidden;
   color: white;
   display: none;
+  z-index: 1;
 }
 .menuPerfil li{
   width: 100%;

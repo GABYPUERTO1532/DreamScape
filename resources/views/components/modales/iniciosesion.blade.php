@@ -7,7 +7,7 @@
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <form action="{{ route('homecliente') }}" method="GET">
+        <form action="{{ route('reservascliente') }}" method="GET">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="reserveModalLabel">
