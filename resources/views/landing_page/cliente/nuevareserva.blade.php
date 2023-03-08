@@ -32,7 +32,7 @@
                     </th>
                 </tr>
             </thead>
-                <tbody id="lista input-group flex-nowrap">
+                <tbody id="lista">
                     <tr class="fila">
                         <td scope="col" colspan="2">
                             <select name="tipo[]" id="" class="form-select form-select-lg class="form-control"">
