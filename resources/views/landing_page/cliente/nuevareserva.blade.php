@@ -8,50 +8,53 @@
 <h1>Hacer nueva reserva</h1>
 <div class="card">
     <form action="#">
-        <table class="table">
+        <table class="table container-fluid" style="table-layout: fixed;
+        ">
             <thead>
-                <th>
-                    Tipo de habitación
-                </th>
-                <th>
-                    Inicio visita
-                </th>
-                <th>
-                    Final visita
-                </th>
-                <th>
-                    Número adultos
-                </th>
-                <th>
-                    Número niños
-                </th>
-                <th>
-                    Remover
-                </th>
+                <tr class="table-primary">
+                    <th scope="col" colspan="2">
+                        Tipo de habitación
+                    </th>
+                    <th scope="col">
+                        Inicio visita
+                    </th>
+                    <th scope="col">
+                        Final visita
+                    </th>
+                    <th scope="col">
+                        Número adultos
+                    </th>
+                    <th scope="col">
+                        Número niños
+                    </th scope="col">
+                    <th>
+                        Remover
+                    </th>
+                </tr>
             </thead>
-                <tbody id="lista">
+                <tbody id="lista input-group flex-nowrap">
                     <tr class="fila">
-                        <td>
-                            <select name="tipo[]" id="">
+                        <td scope="col" colspan="2">
+                            <select name="tipo[]" id="" class="form-select form-select-lg class="form-control"">
                                 <option value="" required> - - - </option>
                                 @foreach($roomTypes as $room)
-                                <option value="{{$room->id}}">Habitación {{$room->nombre}}</option>
+                                <option value="{{$room->id}}">{{$room->nombre}}</option>
                                 @endforeach
                             </select>
                         </td>
-                        <td>
-                            <input type="date" name="fecha_ini[]" id="">
+                        <td scope="col">
+                            <input type="date" name="fecha_ini[]" id="" class="form-control">
                         </td>
-                        <td>
-                            <input type="date" name="fecha_fin[]" id="">
+                        <td scope="col">
+                            <input type="date" name="fecha_fin[]" id="" class="form-control">
                         </td>
-                        <td>
-                            <input type="number" name="num_adult[]" id="">
+                        <td scope="col">
+                            <input type="number" name="num_adult[]" id="" class="form-control">
                         </td>
-                        <td>
-                            <input type="number" name="num_men[]" id="">
+                        <td scope="col">
+                            <input type="number" name="num_men[]" id="" class="form-control">
                         </td>
-                        <td>
+                        <td scope="col">
                             <button class="btn btn-danger delete">
                                 Eliminar
                             </button>

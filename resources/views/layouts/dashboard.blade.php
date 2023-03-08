@@ -45,10 +45,14 @@
             </div>
         </div>
     </x-cabecera>
-    
-    <div class="row">
+    <div class="container-fluid bg-light d-block d-lg-none" id="despliegueMenu" style="color:white; text-align: center; cursor:pointer;">
+        <ul class="nav justify-content-center">
+            @yield('menu')
+        </ul>
+    </div>
+    <div class="row container-fluid">
 
-        <div class="d-flex flex-column p-3 col-3" style="width: 280px;min-height: 70vh;">
+        <div class="d-flex flex-column p-3 col-3 d-none d-lg-flex " style="min-height: 70vh;">
             <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
               <span class="fs-4">Opciones</span>
             </a>
@@ -70,7 +74,7 @@
                 {{$user->name}}
             </div>
         </div>
-        <div class="col-9 mt-4">
+        <div class="col-12 col-lg-8 mt-4">
             @yield('content')
         </div>
         
