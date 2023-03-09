@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use App\Models\estadisticas;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -56,6 +55,12 @@ class DatabaseSeeder extends Seeder
 
             //Ejecucion Seed estadisticas
             estadisticasSeed::class,
+
+            //Ejecucion Seed Categorias_registros
+            categorias_registrosSeed::class,
+
+            //Ejecucion Seed registros_contables
+            registros_contablesSeed::class
         ]);
     }
 }
