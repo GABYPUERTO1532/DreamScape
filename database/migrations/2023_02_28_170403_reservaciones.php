@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
 
             //Columnas Personalizadas
-            $table->datetime("ini_date")->comment("Fecha Inicio");
-            $table->datetime("fin_date")->comment("Fecha Fin");
+            $table->datetime("fech_ini")->comment("Fecha Inicio");
+            $table->datetime("fech_fin")->comment("Fecha Fin");
             $table->string("costo",8);
             $table->integer("num_adulto")->comment("Numero Adultos");
             $table->integer("num_nino")->comment("Numero Niños");
