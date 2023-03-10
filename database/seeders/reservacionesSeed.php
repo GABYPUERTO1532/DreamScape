@@ -16,8 +16,8 @@ class reservacionesSeed extends Seeder
     public function run()
     {
         reservaciones::create([
-            'ini_date'=>"2023/01/28 00:00",
-            'fin_date'=>"2023/02/10 12:00",
+            'fecha_ini'=>"2023/01/28 00:00",
+            'fecha_fin'=>"2023/02/10 12:00",
             'costo'=>"100.000",
             'num_adulto'=>4,
             'num_nino'=>3,
@@ -26,8 +26,8 @@ class reservacionesSeed extends Seeder
         ]);
 
         reservaciones::create([
-            'ini_date'=>"2023/02/28 13:00",
-            'fin_date'=>"2023/03/01 13:00",
+            'fecha_ini'=>"2023/02/28 13:00",
+            'fecha_fin'=>"2023/03/01 13:00",
             'costo'=>"14.000",
             'num_adulto'=>4,
             'num_nino'=>3,
