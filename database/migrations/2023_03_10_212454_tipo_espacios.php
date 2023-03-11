@@ -13,11 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('categorias_registros', function (Blueprint $table) {
+        Schema::create('tipo_espacios', function (Blueprint $table) {
             $table->id();
-
+            
             $table->string("nombre");
             $table->text("descripcion");
+            $table->integer("max_personas");
+            $table->string("costo");
+ 
         });
     }
 
@@ -28,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categorias_registros');
+        Schema::dropIfExists('tipo_espacios');
     }
 };

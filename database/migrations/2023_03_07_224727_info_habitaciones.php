@@ -23,7 +23,8 @@ return new class extends Migration
                 tipo_habitaciones.nombre AS 'categoria',
                 tipo_habitaciones.descripcion,
                 tipo_habitaciones.max_adultos,
-                tipo_habitaciones.max_ninos
+                tipo_habitaciones.max_ninos,
+                tipo_habitaciones.costo_base
                 
             FROM habitaciones LEFT JOIN tipo_habitaciones
             ON habitaciones.id_tipo_habitacion=tipo_habitaciones.id

@@ -21,6 +21,7 @@ return new class extends Migration
             $table->text("descripcion")->unique();
             $table->integer("max_adultos")->comment("Maximo Adultos");
             $table->integer("max_ninos")->comment("Maximo Niños");
+            $table->string("costo_base");
             
         });
     }

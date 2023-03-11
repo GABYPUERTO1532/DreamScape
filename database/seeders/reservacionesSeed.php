@@ -34,5 +34,15 @@ class reservacionesSeed extends Seeder
             'estado'=>'Activa',
             'id_usuario_cliente'=>1,
         ]);
+
+        reservaciones::create([
+            'fecha_ini'=>"2023/02/28 13:00",
+            'fecha_fin'=>"2023/03/01 13:00",
+            'costo'=>"100000",
+            'num_adulto'=>4,
+            'num_nino'=>0,
+            'estado'=>'Activa',
+            'id_usuario_cliente'=>2,
+        ]);
     }
 }

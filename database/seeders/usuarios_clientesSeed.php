@@ -20,5 +20,11 @@ class usuarios_clientesSeed extends Seeder
             'password'=>'123456789',
             'id_cliente'=>1
         ]);
+
+        usuarios_clientes::create([
+            'email'=>"empresa_patito@gmail.com",
+            'password'=>'987654321',
+            'id_cliente'=>2
+        ]);
     }
 }

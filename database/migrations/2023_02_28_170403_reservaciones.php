@@ -21,7 +21,7 @@ return new class extends Migration
             $table->datetime("fecha_fin")->comment("Fecha Fin");
             $table->string("costo",8);
             $table->integer("num_adulto")->comment("Numero Adultos");
-            $table->integer("num_nino")->comment("Numero Niños");
+            $table->integer("num_nino")->comment("Numero Niños")->nullable();
             $table->string("estado",20);
             $table->unsignedBigInteger("id_usuario_cliente");
 
