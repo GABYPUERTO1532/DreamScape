@@ -160,3 +160,21 @@ footer {
 .fotoPerfil:hover{
   cursor: pointer;
 }
+
+/*Estilos Login*/
+.body_login_clientes{
+  background-image: url("../img/background_body.jpg");
+  background-size: cover;
+}
+
+.container_login{
+  height: 100vh;
+}
+
+#container_links_login{
+  margin-top: 20px;
+}
+
+.link_login{
+  display: block;
+}
