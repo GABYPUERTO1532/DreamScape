@@ -171,6 +171,7 @@ footer {
   .star-rating:hover a:hover ~ a {
     color: #95a5a6; /* gris (normal) */
   }
+
 /*Estilos Login*/
 .body_login_clientes{
   background-image: url("../img/background_body.jpg");

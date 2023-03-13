@@ -11,7 +11,7 @@
     @vite(['resources/css/app.css'])
     @vite(['node_modules/bootstrap/dist/js/bootstrap.js'])
 
-    <link rel="shortcut icon" href="./img/palmera.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('img/others/icon.png')}}" type="image/x-icon">
 
   </head>
   <body @yield("custom_attributes",'')>
