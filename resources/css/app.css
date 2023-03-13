@@ -1,3 +1,4 @@
+/*Importacion Fuentes Externas*/
 @font-face {
   font-family: "Fuente-contenido";
   src: url("../fonts/Mithella-Regular.otf");
@@ -7,26 +8,32 @@
   src: url("../fonts/Friendly-Schoolmates.otf");
 }
 
+/*Estilos Globales*/
 body {
   font-family: "Fuente-contenido";
   background-color: #f1f1f1;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #1b75bb;
+/*Estilos Header*/
+.icono_social{
+  width: 50px;
+}
+
+#slogan {
+  font-size: 2rem;
+  color:black;
+  padding-left: 0px;
+  padding-right: 0px;
   font-family: "Fuente-Titulos";
 }
 
+a {
+  text-decoration: none;
+}
+
+/*Estilos Navbar*/
 .nav-links {
   background-color: #000000;
-  position: sticky;
-  z-index: 1;
-  top: 0;
 }
 
 .ul-link-nav > li {
@@ -41,15 +48,12 @@ h6 {
   background-color: #657c9b;
 }
 
-#slog {
-  font-size: 2rem;
-  color:#1000C2;
-  padding-left: 0px;
+h1,h2,h3,h4,h5,h6 {
+  color: #1b75bb;
   font-family: "Fuente-Titulos";
 }
-a {
-  text-decoration: none;
-}
+
+
 .div-central-nav {
   width: 30rem;
 }
@@ -58,11 +62,11 @@ a {
   padding-left: 1rem;
 }
 .buttons {
-  background-color: #4b6587;
+  background-color: #1b75bb;
   color: white;
 }
 .buttons:hover {
-  background-color: #657c9b;
+  background-color: #15598e;
   color: white;
 }
 
@@ -71,9 +75,9 @@ a {
   background-color: rgb(255, 255, 255);
 }
 
-/*footer*/
+/*Estilos Footer*/
 footer {
-  background-color: #3c5186;
+  background-color: #1b75bb;
   font-size: 1rem;
   color: white;
   margin-top: 2rem;
