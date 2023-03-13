@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1b75bb;
+  color: #1000C2;
   font-family: "Fuente-Titulos";
 }
 
@@ -43,7 +43,7 @@ h6 {
 
 #slog {
   font-size: 2rem;
-  color:#1000C2;
+  color:#ffffff;
   padding-left: 0px;
   font-family: "Fuente-Titulos";
 }
@@ -58,7 +58,7 @@ a {
   padding-left: 1rem;
 }
 .buttons {
-  background-color: #4b6587;
+  background-color: #2499c7;
   color: white;
 }
 .buttons:hover {
@@ -73,11 +73,11 @@ a {
 
 /*footer*/
 footer {
-  background-color: #3c5186;
+  background-color: #2499c7 !important;
   font-size: 1rem;
   color: white;
   margin-top: 2rem;
-  text-align: center;
+  padding: 3rem;
 }
 .titles-footer {
   color: white;
@@ -156,3 +156,15 @@ footer {
 .fotoPerfil:hover{
   cursor: pointer;
 }
+
+.star-rating a {
+  display: inline-block;
+  color: #95a5a6; /* gris (normal) */
+  font-size: xx-large;
+}
+.star-rating:hover a {
+  color: #f39c12; /* amarillo (seleccionado) */
+}
+  .star-rating:hover a:hover ~ a {
+    color: #95a5a6; /* gris (normal) */
+  }

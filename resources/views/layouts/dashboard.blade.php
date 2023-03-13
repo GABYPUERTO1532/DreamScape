@@ -20,13 +20,13 @@
             //Añadir rutas base de otros tipos de usuario
         }
     @endphp
-    <x-cabecera href="{{route($home)}}">
+    <x-cabera-dos href="{{route($home)}}">
         <div class="fs-5">
             <div class="fotoPerfil">
                 <a href="#">
                     @if(isset($user->url_photo))
                         <img width="100" height="100" style="object-fit: cover; border-radius: 30%;" 
-                        src="/storage/userPhotos/{{$user->url_photo}}" alt="Foto de {{$user->name}}" >
+                        src="storage/userPhotos/{{$user->url_photo}}" alt="Foto de {{$user->name}}" >
                     @else
                         <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -64,7 +64,7 @@
             <div class="px-4 fs-5">
                 @if(isset($user->url_photo))
                 <img width="40" height="40" style="object-fit: cover; border-radius: 30%;" 
-                src="/storage/userPhotos/{{$user->url_photo}}" alt="Foto de {{$user->name}}" >
+                src="storage/userPhotos/{{$user->url_photo}}" alt="Foto de {{$user->name}}" >
                 @else
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -80,7 +80,7 @@
         
     </div>
 
-    @include('components.pie-de-pagina')
+    @include('components.pie-de-pagina-dos')
     @yield('scripts')
 </body>
     @vite(['node_modules/bootstrap/dist/js/bootstrap.js'])

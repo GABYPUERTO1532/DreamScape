@@ -31,12 +31,30 @@ Route::get('sobrenos', function () {
 })->name("sobrenos");
 
 Route::get('reservascli',function() {
-    return view('landing_page.cliente.reservas',['user' => Config('testing.user')]);
+    return view('landing_page.cliente.reservas',['user' =>(object) [
+        'rol' => 0, //si es cliente enviar 0
+        'name' => 'Juan David',
+        'url_photo' => 'surrealismo.jpg'
+    ]]);
 })->name('reservascliente');
 
 Route::get('hacerreserva',function() {
     return view('landing_page.cliente.nuevareserva', [
-        'user' => Config('testing.user'),
+        'user' => (object) [
+            'rol' => 0, //si es cliente enviar 0
+            'name' => 'Juan David',
+            'url_photo' => 'surrealismo.jpg'
+        ],
         'roomTypes' => tipo_habitaciones::get()
     ]);
 })->name('hacerreserva');
+
+
+
+Route::get('hacerpqrs',function() {
+    return view('landing_page.cliente.pqrs',['user' =>(object) [
+        'rol' => 0, //si es cliente enviar 0
+        'name' => 'Juan David',
+        'url_photo' => 'surrealismo.jpg'
+    ]]);
+})->name('pqrs');
