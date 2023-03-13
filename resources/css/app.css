@@ -19,9 +19,9 @@ body {
   width: 50px;
 }
 
-#slogan {
+#slog {
   font-size: 2rem;
-  color:black;
+  color: blue;
   padding-left: 0px;
   padding-right: 0px;
   font-family: "Fuente-Titulos";
