@@ -173,8 +173,13 @@ footer {
   }
 
 /*Estilos Login*/
-.body_login_clientes{
-  background-image: url("../img/background_body.jpg");
+.body_login_clients{
+  background-image: url("../img/background_body_client.jpg");
+  background-size: cover;
+}
+
+.body_login_admin{
+  background-image: url("../img/background_body_admin.jpg");
   background-size: cover;
 }
 

@@ -2,7 +2,7 @@
 
 @section('title','Login')
 
-@section('custom_attributes','class=body_login_clients')
+@section('custom_attributes','class=body_login_admin')
 
 @section('content')
 
@@ -10,7 +10,7 @@
 
         <div class="card col-xl-5 col-lg-5 col-md-4 col-sm-11 col-11">
             <div class="card-body">
-                <h3 class="card-title">Inicio de Sesion</h3>
+                <h3 class="card-title">Bienvenido Trabajador</h3>
 
                 <div class="container">
 
@@ -33,11 +33,6 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary" style="width: 100%">Inciar sesion</button>
-
-                        <div id="container_links_login">
-                            <a href="" class="link_login">¿Perdiste tu contraseña</a>
-                            <a href="link_login">¿No tienes cuenta?, Registrate</a>
-                        </div>
 
                     </form>
 
