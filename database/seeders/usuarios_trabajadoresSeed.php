@@ -33,7 +33,7 @@ class usuarios_trabajadoresSeed extends Seeder
             'email'=>'correovale@gmail.com',
             'password'=>'234567890',
             'id_trabajador'=>3,
-            'id_rol'=>3
+            'id_rol'=>6
         ]);
 
         usuarios_trabajadores::create([

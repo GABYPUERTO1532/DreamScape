@@ -40,5 +40,10 @@ class rolesSeed extends Seeder
             'nombre'=>'servicios generales'
         ]);
 
+        //Creacion Rol Tesoreria
+        Roles::create([
+            'nombre'=>'tesorero'
+        ]);
+
     }
 }

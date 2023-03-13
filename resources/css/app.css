@@ -1,3 +1,4 @@
+/*Importacion Fuentes Externas*/
 @font-face {
   font-family: "Fuente-contenido";
   src: url("../fonts/Mithella-Regular.otf");
@@ -7,6 +8,7 @@
   src: url("../fonts/Friendly-Schoolmates.otf");
 }
 
+/*Estilos Globales*/
 body {
   font-family: "Fuente-contenido";
   background-color: #f1f1f1;
@@ -22,11 +24,13 @@ h6 {
   font-family: "Fuente-Titulos";
 }
 
+a {
+  text-decoration: none;
+}
+
+/*Estilos Navbar*/
 .nav-links {
   background-color: #000000;
-  position: sticky;
-  z-index: 1;
-  top: 0;
 }
 
 .ul-link-nav > li {
@@ -47,9 +51,8 @@ h6 {
   padding-left: 0px;
   font-family: "Fuente-Titulos";
 }
-a {
-  text-decoration: none;
-}
+
+
 .div-central-nav {
   width: 30rem;
 }
@@ -62,7 +65,7 @@ a {
   color: white;
 }
 .buttons:hover {
-  background-color: #657c9b;
+  background-color: #15598e;
   color: white;
 }
 
@@ -71,7 +74,7 @@ a {
   background-color: rgb(255, 255, 255);
 }
 
-/*footer*/
+/*Estilos Footer*/
 footer {
   background-color: #2499c7 !important;
   font-size: 1rem;
@@ -168,3 +171,20 @@ footer {
   .star-rating:hover a:hover ~ a {
     color: #95a5a6; /* gris (normal) */
   }
+/*Estilos Login*/
+.body_login_clientes{
+  background-image: url("../img/background_body.jpg");
+  background-size: cover;
+}
+
+.container_login{
+  height: 100vh;
+}
+
+#container_links_login{
+  margin-top: 20px;
+}
+
+.link_login{
+  display: block;
+}

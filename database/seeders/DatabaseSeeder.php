@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use App\Models\estadisticas;
+use App\Models\espacio_reservacion;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -56,6 +56,18 @@ class DatabaseSeeder extends Seeder
 
             //Ejecucion Seed estadisticas
             estadisticasSeed::class,
+
+            //Ejecucion Seed tipo_espacios
+            tipo_espaciosSeed::class,
+
+            //Ejecucion Seed espacios_empresariales
+            espacios_empresarialesSeed::class,
+
+            //Ejecucion Seed espacio_reservacion
+            espacio_reservacionSeed::class,
+
+            //Ejecucion Seed participantes_eventos
+            participantes_eventosSeed::class
         ]);
     }
 }

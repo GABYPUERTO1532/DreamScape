@@ -19,14 +19,16 @@ class tipo_habitacionesSeed extends Seeder
             'nombre'=>'Sencilla',
             'descripcion'=>'Habitacion Sencilla',
             'max_adultos'=>'1',
-            'max_ninos'=>'1'
+            'max_ninos'=>'1',
+            'costo_base'=>'25000'
         ]);
 
         tipo_habitaciones::create([
             'nombre'=>'Doble',
             'descripcion'=>'Habitacion Doble',
             'max_adultos'=>'2',
-            'max_ninos'=>'2'
+            'max_ninos'=>'2',
+            'costo_base'=>'50000'
         ]);
     }
 }

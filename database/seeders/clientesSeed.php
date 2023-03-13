@@ -22,5 +22,13 @@ class clientesSeed extends Seeder
             'sex_genero'=>"Masculino",
             'num_tel'=>"0000000000"
         ]);
+
+        clientes::create([
+            'nombre'=>"Empresa Patito",
+            'tip_doc'=>"RUT",
+            'num_doc'=>"0000000000",
+            'sex_genero'=>"Masculino",
+            'num_tel'=>"2222222222"
+        ]);
     }
 }
