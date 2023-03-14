@@ -194,3 +194,20 @@ footer {
 .link_login{
   display: block;
 }
+
+/*Estilos formulario Registro*/
+.register_body{
+  background-color: white;
+}
+
+.register_image{
+  background-color: #2499c7 !important;
+}
+
+label{
+  font-weight: bold;
+}
+
+td{
+  border: black 1px solid;
+}

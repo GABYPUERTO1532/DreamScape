@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <div class="border d-flex align-items-center justify-content-center text-center container_login">
+    <div class="d-flex align-items-center justify-content-center text-center container_login">
 
         <div class="card col-xl-5 col-lg-5 col-md-4 col-sm-11 col-11">
             <div class="card-body">
@@ -36,7 +36,8 @@
 
                         <div id="container_links_login">
                             <a href="" class="link_login">¿Perdiste tu contraseña</a>
-                            <a href="link_login">¿No tienes cuenta?, Registrate</a>
+
+                            <a href="{{route("clients_register")}}" class="link_login">¿No tienes cuenta?, Registrate</a>
                         </div>
 
                     </form>
